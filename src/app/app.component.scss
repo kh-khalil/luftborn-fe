@@ -15,6 +15,10 @@
     padding-left: 95px;
     padding-right: 95px;
     padding-bottom: 267px;
+    @media only screen and (max-width: $mobile-width) {
+      padding: 81px 24px;
+      justify-content: center;
+    }
   }
 
   .flex-container-wrap {
@@ -25,6 +29,11 @@
     }
     :nth-child(n + 6) {
       margin-top: 38px;
+    }
+    @media only screen and (max-width: $mobile-width) {
+      * {
+        margin-top: 21px;
+      }
     }
   }
 }

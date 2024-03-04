@@ -3,12 +3,22 @@
 #main-card-container {
   height: 518px;
   width: 255px;
+  @media only screen and (max-width: $mobile-width) {
+    height: 203px;
+    width: 327px;
+  }
   background-color: #1c204b;
   border-radius: 15px;
   #top-section {
     border-radius: 15px;
     background-color: #5747ea;
     height: 354px;
+    @media only screen and (max-width: $mobile-width) {
+      height: 133px;
+      // padding: 34.5px 35.5px;
+      display: flex;
+      align-items: center;
+    }
 
     img {
       border-radius: 50%;
@@ -16,7 +26,13 @@
       position: relative;
       margin-top: 32px;
       margin-left: 58px;
-      width: 138px;
+      height: 138px;
+      @media only screen and (max-width: $mobile-width) {
+        height: 64px;
+        aspect-ratio: 1;
+        margin-top: 0;
+        margin-left: 32.5px;
+      }
     }
 
     .top-section-text {
@@ -39,6 +55,12 @@
         margin-block: 0;
         padding-top: 12px;
         padding-bottom: 12px;
+        @media only screen and (max-width: $mobile-width) {
+          font-size: 24px;
+          line-height: 28px;
+          letter-spacing: 0px;
+          padding-top: 4px;
+        }
       }
     }
   }
@@ -48,6 +70,13 @@
     padding-top: 29px;
     padding-bottom: 29px;
     padding-left: 35px;
+
+    @media only screen and (max-width: $mobile-width) {
+      display: flex;
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+    }
 
     a {
       &:nth-child(2) {
@@ -66,6 +95,7 @@
       text-decoration: none !important;
       @media only screen and (max-width: $mobile-width) {
         width: $col-4-width;
+        text-align: center;
       }
     }
 
