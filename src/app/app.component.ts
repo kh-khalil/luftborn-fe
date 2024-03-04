@@ -13,4 +13,5 @@ import { MainCardComponent } from './main-card/main-card.component';
 })
 export class AppComponent {
   title = 'luftborn-fe';
+  list = new Array(10);
 }

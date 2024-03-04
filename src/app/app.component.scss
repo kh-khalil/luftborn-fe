@@ -10,10 +10,21 @@
 
   .content {
     display: flex;
-    @media only screen and (max-width: $mobile-width) {
-      flex-wrap: wrap;
-    }
+    flex-wrap: wrap;
     padding-top: 239px;
-    padding-left: 117px;
+    padding-left: 95px;
+    padding-right: 95px;
+    padding-bottom: 267px;
+  }
+
+  .flex-container-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    & * {
+      padding-left: 29.2px;
+    }
+    :nth-child(n + 6) {
+      margin-top: 38px;
+    }
   }
 }
