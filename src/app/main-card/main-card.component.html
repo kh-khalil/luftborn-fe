@@ -1,0 +1,14 @@
+<div id="main-card-container">
+  <div id="top-section">
+    <!-- <div class="img-container"> -->
+    <img src="./../../assets/Bitmap.png" alt="profile_pic" />
+    <!-- </div> -->
+    <div class="top-section-text">
+      <p class="title">{{ title }}</p>
+      <p class="sub-title">{{ subTitle }}</p>
+    </div>
+  </div>
+  <div id="bottom-section">
+    <a *ngFor="let period of periods">{{ period }}</a>
+  </div>
+</div>

@@ -1,0 +1,76 @@
+@import "../../variables.scss";
+
+#main-card-container {
+  height: 518px;
+  width: 255px;
+  background-color: #1c204b;
+  border-radius: 15px;
+  #top-section {
+    border-radius: 15px;
+    background-color: #5747ea;
+    height: 354px;
+
+    img {
+      border-radius: 50%;
+      border: 3px solid white;
+      position: relative;
+      margin-top: 32px;
+      margin-left: 58px;
+      width: 138px;
+    }
+
+    .top-section-text {
+      padding: 12.5px 23.5px;
+      text-align: left;
+      .title {
+        color: #bbc0ff;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0px;
+        margin-block: 0;
+        padding-top: 12px;
+      }
+      .sub-title {
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 47px;
+        letter-spacing: 12px;
+        margin-block: 0;
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+    }
+  }
+
+  #bottom-section {
+    color: #7078c9;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    padding-left: 35px;
+
+    a {
+      &:nth-child(2) {
+        margin-top: 21.5px;
+        margin-bottom: 21.5px;
+        color: white;
+      }
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21px;
+      letter-spacing: 0px;
+      text-align: left;
+
+      display: block;
+      width: $col-12-width;
+      text-decoration: none !important;
+      @media only screen and (max-width: $mobile-width) {
+        width: $col-4-width;
+      }
+    }
+
+    a:visited {
+      color: white;
+    }
+  }
+}
