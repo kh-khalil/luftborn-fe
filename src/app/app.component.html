@@ -2,7 +2,10 @@
   <div class="content">
     <app-main-card></app-main-card>
     <div class="col-10 flex-container-wrap">
-      <app-item-card *ngFor="let item of list"></app-item-card>
+      <app-item-card
+        *ngFor="let item of this.data$ | async"
+        [item]="item"
+      ></app-item-card>
     </div>
   </div>
 </div>

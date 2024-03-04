@@ -2,18 +2,20 @@
   <div class="top-section" [ngStyle]="{ backgroundColor: item.bgColor }"></div>
   <div class="bottom-section">
     <div class="title">
-      <span>men's clothing</span>
+      <span>{{ item.category }}</span>
       <span class="dots">...</span>
     </div>
     <div class="body">
-      <span class="value">109.95$</span>
+      <span class="value">{{ item.price }}$</span>
       <div class="description">
-        <p class="col-9">
-          Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+        <p class="col-9 truncate-line-clamp">
+          {{ item.description }}
         </p>
         <p class="col-3 in-store">
-          <span>In Store</span>
-          <span>120</span>
+          <span>{{
+            item.rating.count < 1 ? "Out Of Stock!" : "In Store"
+          }}</span>
+          <span>{{ item.rating.count }}</span>
         </p>
       </div>
     </div>
