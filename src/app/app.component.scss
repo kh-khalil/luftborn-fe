@@ -1,0 +1,19 @@
+@import "./../variables.scss";
+
+.container {
+  font-family: Rubik;
+  background-color: #0e1323;
+  color: white;
+  margin: -8px;
+  height: auto;
+  width: auto;
+
+  .content {
+    display: flex;
+    @media only screen and (max-width: $mobile-width) {
+      flex-wrap: wrap;
+    }
+    padding-top: 239px;
+    padding-left: 117px;
+  }
+}

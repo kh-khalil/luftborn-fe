@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+@import "variables";
+
+[class*="col-"] {
+  float: left;
+  padding: $col-padding;
+}
+
+/* For desktop: */
+.col-1 {
+  width: $col-1-width;
+}
+.col-2 {
+  width: $col-2-width;
+}
+.col-3 {
+  width: $col-3-width;
+}
+.col-4 {
+  width: $col-4-width;
+}
+.col-5 {
+  width: $col-5-width;
+}
+.col-6 {
+  width: $col-6-width;
+}
+.col-7 {
+  width: $col-7-width;
+}
+.col-8 {
+  width: $col-8-width;
+}
+.col-9 {
+  width: $col-9-width;
+}
+.col-10 {
+  width: $col-10-width;
+}
+.col-11 {
+  width: $col-11-width;
+}
+.col-12 {
+  width: $col-12-width;
+}
+
+@media only screen and (max-width: $mobile-width) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: $col-12-width;
+  }
+}
